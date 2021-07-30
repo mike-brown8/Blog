@@ -4,17 +4,17 @@ header-img: "img/green.jpg"
 tagline: "cn"  
 description: "一名学生的个人博客"  # 一句话描述你的博客
 baseurl: ""
-url: "https://mike-brown8.github.com"  # 此处填写你的博客地址 
+url: "https://mike-brown8.github.io"  # 此处填写你的博客地址 
 
 # About/contact
 owner: 
   name: "Mike" # 填写作者信息：名字
   email: nohuitou@outlook.com # 填写作者信息：邮箱
-  bio: "-" # 填写作者信息：博客描述
+  bio: "Mike Brown：个人博客" # 填写作者信息：博客描述
 
 # Data
-gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
-favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+gavatar: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
 
 douban_username:  # 你的豆瓣id
 twitter_username: 
