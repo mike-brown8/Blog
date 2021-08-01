@@ -149,3 +149,18 @@ var duoshuoQuery = {short_name:"cnfeat"};
         }
     }
 </style>
+<!-- Talk -->
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'mike-brown8',
+    repo: 'Mike-Brown8.github.io',
+    oauth: {
+        client_id: '3257373e10150e9c848c',
+        client_secret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
