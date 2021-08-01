@@ -58,29 +58,24 @@ layout: default
 
 
                 <!-- 多说评论框 start -->
-<!-- Talk -->
-<-- 引入 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-<-- 添加一个容器-->
-<div id="gitalk-container"></div>
-
-<-- 生成 gitalk 插件-->
-var gitalk = new Gitalk({
-  clientID: '3257373e10150e9c848c', //Client ID
-
-  clientSecret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e', //Client Secret
-
-  repo: 'mike-brown8.github.io',//仓库名称
-  owner: 'mike-brown8',//仓库拥有者
-  admin: ['mike-brown8'],
-  id: location.href,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-
-gitalk.render('gitalk-container')
-<!-- TALK_END -->
+<section class="post-full-comments">
+    {{!-- gittalk --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: '3257373e10150e9c848c',
+            clientSecret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e',
+            repo: 'mike-brown8.github.io',
+            owner: 'mike-brown8',
+            admin: ['mike-brown8'], //这里可以填写具有写权限的用户名列表，用来初始化Issues的
+            id: '{{comment_id}}',
+            distractionFreeMode: false // Facebook-like distraction free mode
+        });
+        gitalk.render('gitalk-container');
+    </script>
+</section>
                 <!-- 多说评论框 end -->
             </div>
         </div>
