@@ -59,19 +59,20 @@ layout: default
 
                 <!-- 多说评论框 start -->
 <!-- Talk -->
-<div id="gitmentContainer"></div>
+<div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-    owner: 'mike-brown8',
-    repo: 'Mike-Brown8.github.io',
-    oauth: {
-        client_id: '3257373e10150e9c848c',
-        client_secret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e',
-    },
-});
-gitment.render('gitmentContainer');
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'mike-brown8',
+  repo: 'Mike-Brown8.github.io',
+  oauth: {
+    client_id: '3257373e10150e9c848c',
+    client_secret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e',
+  },
+})
+gitment.render('container')
 </script>
 <!-- TALK_END -->
                 <!-- 多说评论框 end -->
