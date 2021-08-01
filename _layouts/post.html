@@ -59,21 +59,27 @@ layout: default
 
                 <!-- 多说评论框 start -->
 <!-- Talk -->
-<div id="container"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '<%= page.date %>', // 可选。默认为 location.href
-  owner: 'mike-brown8',
-  repo: 'mike-brown8.github.io',
-  oauth: {
-    client_id: '3257373e10150e9c848c',
-    client_secret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e',
-  },
+<-- 引入 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<-- 添加一个容器-->
+<div id="gitalk-container"></div>
+
+<-- 生成 gitalk 插件-->
+var gitalk = new Gitalk({
+  clientID: '3257373e10150e9c848c', //Client ID
+
+  clientSecret: 'ff582b1af858f51fd2a47c7d20c00d2cd591850e', //Client Secret
+
+  repo: 'mike-brown8.github.io',//仓库名称
+  owner: 'mike-brown8',//仓库拥有者
+  admin: ['mike-brown8'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
-gitment.render('container')
-</script>
+
+gitalk.render('gitalk-container')
 <!-- TALK_END -->
                 <!-- 多说评论框 end -->
             </div>
