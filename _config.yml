@@ -4,7 +4,7 @@ header-img: "img/green.jpg"
 tagline: "cn"  
 description: "一名学生的个人博客"  # 一句话描述你的博客
 baseurl: ""
-url: "https://mike-brown8.github.io"  # 此处填写你的博客地址 
+url: "https://mike-brown8.github.io/mike-brown8-old-blog/"  # 此处填写你的博客地址 
 
 # About/contact
 owner: 
